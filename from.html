@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>document</title>
+    <style>
+        label{
+            font-weight: bold;
+        }
+        .form-group{
+            margin-bottom: 10px;
+        }
+        .form-container{
+            background-color: rgb(248, 196, 255);
+            padding: 2em;
+            border: 2px solid rgb(240, 63, 116);
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgb(184, 113, 113);
+            width: 300px;
+            margin: 100px auto;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: azure;
+        }
+        h2{
+            text-align: center;
+        }
+        input{
+            float: right;
+        }
+        input[type="submit"] {
+            background-color: rgb(241, 27, 248);
+            color: antiquewhite;
+            border: none;
+            border-radius: 3px;
+            padding: 10px 15px;
+            cursor: pointer;  
+        }
+        select{
+            float: right;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+<h2>FORM ENTRY DATA PEGAWAI</h2>
+        <hr>
+ 
+            <div class="form-group">
+                <label for="NIK">NIK</label>
+                <input type="text" id="NIK">
+            </div>
+
+            <div class="form-group">
+                <label for="Nama">Nama</label>
+                <input type="text" id="Nama">
+            </div>
+
+            <div class="form-group">
+                <label for="tempat_lahir">Tempat Lahir</label>
+                <input type="text" id="tempat_lahir">
+            </div>
+
+            <div class="form-group">
+                <label for="tanggal_lahir">Tanggal Lahir</label>
+                <input type="text" id="tanggal_lahir">
+            </div>
+
+            <div class="form-group">
+                <label for="Alamat">Alamat</label>
+                <input type="text" id="Alamat">
+            </div>
+
+            <div class="form-group">
+                <label for="No_Telp">No. Telepon</label>
+                <input type="text" id="No_Telp">
+            </div>
+
+            <div class="form-group">
+                <label id="Jabatan">Jabatan</label>
+                <select>
+                    <option value="Jabatan_Terbaru">
+                        Jabatan Terbaru
+                    </option>
+                    <option value="Jabatan_Lama">
+                        Jabatan Lama
+                    </option>
+                </select>
+
+                <div class="form-group">
+                    <label id="Status">Status</label>
+                <select>
+                   <option value="Status_Terbaru">
+                       Status Terbaru
+                   </option>
+                   <option value="Status_Lama">
+                       Status Lama
+                   </option>
+               </select>
+                </div>
+            <input type="submit">
+            </div>
+    </div>
+</body>
+</html>
